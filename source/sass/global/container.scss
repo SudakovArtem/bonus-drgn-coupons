@@ -1,0 +1,17 @@
+.container {
+  width: 100%;
+  max-width: 192rem;
+  margin: 0 auto;
+
+  @include desktop {
+    padding: 0 7.1rem;
+  }
+
+  @include tablet {
+    padding: 0 48px;
+  }
+
+  @include mobile {
+    padding: 0 1.3rem;
+  }
+}

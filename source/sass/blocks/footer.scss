@@ -1,0 +1,188 @@
+.footer {
+  background: linear-gradient(180deg, rgba(5, 23, 27, 0) 0%, #05171b 35%);
+  padding-top: 157.678px;
+  padding-bottom: 11.837px;
+
+  @include tablet {
+    padding-top: 146px;
+    padding-bottom: 4px;
+  }
+
+  @include mobile {
+    padding-bottom: 54px;
+    padding-top: 37px;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+.footer__logos {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 65.6rem;
+  margin-top: 0;
+  padding: 0;
+  list-style: none;
+
+  @include tablet-desktop {
+    margin-bottom: 2.4rem;
+    margin-left: 0.7rem;
+    gap: 2.4rem;
+  }
+
+  @include mobile {
+    margin-bottom: 0.8rem;
+    margin-left: 0.1rem;
+    gap: 0.9rem;
+  }
+
+  &:last-of-type {
+    @include tablet-desktop {
+      gap: 3.1rem;
+    }
+
+    @include desktop {
+      margin-bottom: 3.3rem;
+    }
+
+    @include tablet {
+      margin-bottom: 56px;
+    }
+
+    @include mobile {
+      margin-bottom: 3.5rem;
+      gap: 1.23rem;
+    }
+  }
+}
+
+.footer__logo {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  &--piastrix {
+    @include tablet-desktop {
+      width: 9.2rem;
+      height: 3.8rem;
+    }
+
+    @include mobile {
+      width: 3.7rem;
+      height: 1.6rem;
+    }
+  }
+
+  &--visa {
+    @include tablet-desktop {
+      width: 10.5rem;
+      height: 4rem;
+    }
+
+    @include mobile {
+      width: 4.2rem;
+      height: 1.6rem;
+    }
+  }
+
+  &--p2p {
+    @include tablet-desktop {
+      width: 11.3rem;
+      height: 6.2rem;
+    }
+
+    @include mobile {
+      width: 4.5rem;
+      height: 2.6rem;
+    }
+  }
+
+  &--wallet {
+    @include tablet-desktop {
+      width: 11.5rem;
+      height: 3.7rem;
+    }
+
+    @include mobile {
+      width: 4.6rem;
+      height: 1.6rem;
+    }
+  }
+
+  &--u-money {
+    @include tablet-desktop {
+      width: 12.5rem;
+      height: 3.2rem;
+    }
+
+    @include mobile {
+      width: 5rem;
+      height: 1.4rem;
+    }
+  }
+
+  &--bitcoin {
+    @include tablet-desktop {
+      width: 8.9rem;
+      height: 2.3rem;
+    }
+
+    @include mobile {
+      width: 3.6rem;
+      height: 0.9rem;
+    }
+  }
+
+  &--litecoin {
+    @include tablet-desktop {
+      width: 8.1rem;
+      height: 2.8rem;
+    }
+
+    @include mobile {
+      width: 3.3rem;
+      height: 1.1rem;
+    }
+  }
+
+  &--ethereum {
+    @include tablet-desktop {
+      width: 10.5rem;
+      height: 3.2rem;
+    }
+
+    @include mobile {
+      width: 4.2rem;
+      height: 1.3rem;
+    }
+  }
+}
+
+.footer__copyright {
+  line-height: normal;
+  color: $color-default-white;
+  margin: 0;
+
+  @include tablet-desktop {
+    font-size: 1.4rem;
+  }
+
+  @include mobile {
+    font-size: 0.76rem;
+  }
+}

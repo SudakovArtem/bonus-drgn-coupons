@@ -1,0 +1,22 @@
+mixin footer(footerMods)
+  footer.footer(class=footerMods)
+    .container
+      ul.footer__logos
+        li.footer__logo.footer__logo--piastrix
+          img(src="img/svg/piastrix-logo.svg", width="92", height="38" alt="piastrix-logo")
+        li.footer__logo.footer__logo--visa
+          img(src="img/svg/visa-mastercard-logo.svg", width="105", height="40" alt="visa-mastercard")
+        li.footer__logo.footer__logo--p2p
+          img(src="img/svg/p2p-logo.svg", width="113", height="62" alt="p2p-logo")
+        li.footer__logo.footer__logo--wallet
+          +picture("content", "wallet-logo", "png", 115, 37, "wallet-logo")
+        li.footer__logo.footer__logo--u-money
+          img(src="img/svg/u-money-logo.svg", width="125", height="32" alt="u-money-logo")
+      ul.footer__logos
+        li.footer__logo.footer__logo--bitcoin
+          img(src="img/svg/bitcoin-logo.svg", width="89", height="23" alt="bitcoin-logo")
+        li.footer__logo.footer__logo--litecoin
+          img(src="img/svg/litecoin-logo.svg", width="81", height="28" alt="litecoin-logo")
+        li.footer__logo.footer__logo--ethereum
+          img(src="img/svg/ethereum-logo.svg", width="105", height="32" alt="ethereum-logo")
+      p.footer__copyright © 2023 Dragon Money. All rights reserved

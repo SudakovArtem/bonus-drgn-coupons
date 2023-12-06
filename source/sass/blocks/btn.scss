@@ -1,0 +1,39 @@
+.btn {
+  font-weight: 900;
+  line-height: normal;
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+  justify-content: center;
+  cursor: pointer;
+  transition: box-shadow $trans-default;
+  text-transform: uppercase;
+  color: $color-default-white;
+  border: none;
+  background-color: $color-free-speech-red-2;
+
+  @include tablet-desktop {
+    font-size: 3.6rem;
+    padding: 26px 35px;
+    border-radius: 0.8rem;
+    min-width: 41.7rem;
+  }
+
+  @include mobile {
+    font-size: 1.6rem;
+    min-width: 18.4rem;
+    min-height: 4rem;
+    padding: 0.8rem 1.2rem;
+    border-radius: 0.4rem;
+  }
+
+  &:disabled {
+    pointer-events: none;
+
+    opacity: 0.5;
+  }
+
+  @include hover-focus {
+    box-shadow: 0 4px 4px 0 rgba($color-default-black, 0.25);
+  }
+}

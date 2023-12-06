@@ -1,0 +1,91 @@
+extends ../components/base/layout
+
+block variables
+  - const title = "ProjectName" //- на страницах кроме главной используйте О нас — ProjectName
+  - const wrapperMods = ""
+  - const hasHeader = true
+  - const headerMods = ""
+  - const hasFooter = true
+  - const footerMods = ""
+  - const currentUrl = "index.html" //- для остальных страниц пишем пустую строку или индекс активного headerLinks
+
+block main
+  picture
+    source(type='image/webp' media='(max-width: 767px)' srcset='img/content/main-bg-mob.webp, img/content/main-bg-mob@2x.webp 2x')
+    source(media='(max-width: 767px)' srcset='img/content/main-bg-mob.png, img/content/main-bg-mob@2x.png 2x')
+    source(type='image/webp' media='(max-width: 1024px)' srcset='img/content/main-bg-tablet.webp, img/content/main-bg-tablet@2x.webp 2x')
+    source(media='(max-width: 1024px)' srcset='img/content/main-bg-tablet.png, img/content/main-bg-tablet@2x.png 2x')
+    source(type="image/webp", srcset="img/content/main-bg.webp, img/content/main-bg@2x.webp 2x")
+    img(src="img/content/main-bg.jpg", srcset="img/content/main-bg@2x.jpg 2x" width=1920, height=1456, alt="").bg
+  main
+    section.main
+      .container
+        .main__content
+          .main__aside
+            h2.main__title
+              span.main__title-big призовой фонд
+              span.main__title-num 24 000 000₽
+              span.main__title-small в Новогоднем беспределе!
+            p.main__text Играй и выигрывай весь декабрь на игровой платформе
+              br
+              | DragonMoney!
+            .main__footer
+              a.main__btn.btn(href="#") Забрать подарки
+              .main__prompt
+                img(src="img/svg/ellipse.svg", width="138", height="88" alt="").ellipse
+                span.main__prompt-text Более
+                span.main__prompt-lead 140 000
+                span.main__prompt-text ПРИЗОВ
+    section.slider
+      button.slider__button.slider__button--prev(type="button")
+      button.slider__button.slider__button--next(type="button")
+      .container
+        .swiper
+          .swiper-wrapper
+            .swiper-slide
+              .swiper-carousel-animate-opacity
+                .slide-content
+                  .slide-img
+                    +picture("content", "slide-img-3", "png", 148, 123, "")
+                  p.slide-text iPhone 15 и 15 Pro Max
+            .swiper-slide
+              .swiper-carousel-animate-opacity
+                .slide-content
+                  .slide-img
+                    +picture("content", "slide-img-4", "png", 148, 123, "")
+                  p.slide-text Macbook Air
+            .swiper-slide
+              .swiper-carousel-animate-opacity
+                .slide-content
+                  .slide-img
+                    +picture("content", "slide-img-5", "png", 148, 123, "")
+                  p.slide-text iPad
+            .swiper-slide
+              .swiper-carousel-animate-opacity
+                .slide-content
+                  .slide-img
+                    +picture("content", "slide-img-6", "png", 148, 123, "")
+                  p.slide-text Секретный приз
+            .swiper-slide.swiper-slide--bg
+              .swiper-carousel-animate-opacity
+                +picture("content", "slide-bg", "png", 148, 123, "").slide-bg
+                .slide-content
+                  .slide-img
+                  p.slide-text Подарочная игра  Lottery
+            .swiper-slide
+              .swiper-carousel-animate-opacity
+                .slide-content
+                  .slide-img
+                    +picture("content", "slide-img-1", "png", 148, 123, "")
+                  p.slide-text 4 000 000 руб.
+            .swiper-slide
+              .swiper-carousel-animate-opacity
+                .slide-content
+                  .slide-img
+                    +picture("content", "slide-img-2", "png", 148, 123, "")
+                  p.slide-text IPhone 15
+        a.slider__btn.btn(href="#") Забрать подарки
+
+
+
+block modals

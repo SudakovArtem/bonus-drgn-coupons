@@ -1,0 +1,192 @@
+.main {
+  padding-bottom: 9rem;
+
+  @include tablet {
+    padding-bottom: 13.8rem;
+  }
+
+  @include mobile {
+    padding-bottom: 23.8rem;
+  }
+
+  .container {
+    @include mobile {
+      padding: 0 0 0 0.8rem;
+    }
+  }
+}
+
+.main__aside {
+  padding-top: 9.7rem;
+
+  @include tablet-desktop {
+    width: 71.3rem;
+  }
+
+  @include tablet {
+    padding-top: 8.1rem;
+  }
+
+  @include mobile {
+    padding-top: 4rem;
+    position: relative;
+  }
+}
+
+.main__title {
+  color: $color-default-white;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 7.5rem;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+  margin-bottom: 1.6rem;
+
+  @include mobile {
+    line-height: 3.4rem;
+    margin-bottom: 0.3rem;
+  }
+}
+
+.main__title-big {
+  font-size: 8.2rem;
+  margin-bottom: 1.5rem;
+
+  @include mobile {
+    font-size: 3.66rem;
+    margin-bottom: 0.2rem;
+  }
+}
+
+.main__title-num {
+  color: $color-free-speech-red-2;
+  font-size: 11.2rem;
+  font-style: normal;
+  font-weight: 900;
+
+  @include tablet-desktop {
+    margin-bottom: 0.9rem;
+  }
+
+  @include mobile {
+    font-size: 4.9rem;
+    margin-bottom: 0.6rem;
+  }
+}
+
+.main__title-small {
+  font-size: 4.8rem;
+
+  @include mobile {
+    font-size: 2.1rem;
+  }
+}
+
+.main__text {
+  color: $color-default-white;
+  font-size: 3.2rem;
+  font-weight: 500;
+  line-height: 4.8rem;
+  margin-top: 0;
+  max-width: 53rem;
+
+  @include tablet-desktop {
+    margin-bottom: 7.9rem;
+  }
+
+  @include mobile {
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    max-width: 26.5rem;
+  }
+}
+
+.main__footer {
+  display: flex;
+  align-items: center;
+
+  @include mobile {
+    display: contents;
+  }
+}
+
+.main__btn {
+  @include tablet-desktop {
+    margin-right: 1.7rem;
+  }
+
+  @include mobile {
+    display: none;
+  }
+}
+
+.main__prompt {
+  position: relative;
+  width: 13.1rem;
+  height: 8rem;
+  color: $color-free-speech-red-2;
+  isolation: isolate;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1rem 0.5rem;
+  text-transform: uppercase;
+
+  @include mobile {
+    position: absolute;
+    top: 19.1rem;
+    right: 3.1rem;
+    width: 11rem;
+    height: 6.7rem;
+  }
+
+  .ellipse {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 13.8rem;
+    height: 8.8rem;
+    object-fit: contain;
+    z-index: -1;
+
+    @include mobile {
+      width: 11.6rem;
+      height: 7.4rem;
+    }
+  }
+}
+
+.main__prompt-text {
+  font-size: 1.2rem;
+  font-weight: 700;
+
+  @include mobile {
+    font-size: 1rem;
+  }
+}
+
+.main__prompt-lead {
+  font-size: 2.6rem;
+  font-weight: 900;
+
+  @include mobile {
+    font-size: 2.2rem;
+  }
+}
+
+.main__picture {
+  position: relative;
+  width: calc(100% - 71.3rem);
+
+  img {
+    position: absolute;
+    left: 1.5rem;
+    bottom: -38.6rem;
+    width: 104.9rem;
+    height: 95.6rem;
+    object-fit: contain;
+  }
+}
